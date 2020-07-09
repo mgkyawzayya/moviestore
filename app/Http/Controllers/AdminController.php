@@ -39,14 +39,13 @@ class AdminController extends Controller
             'photo' => 'required',
             'photo.*' => 'image|mimes:jpeg,png,jpg,gif,svg|max:10240'
         ]);
-        if ($request->hasfile('photo')) {
+        if ($request->hasFile('photo')) {
 
             $image       = $request->file('photo');
             $name = time() . '.' . $image->getClientOriginalExtension();
 
-            $image_resize = Image::make($image->getRealPath());
-            $image_resize->resize(250, 400);
-            $image_resize->save(public_path('images/' . $name));
+            $image_resize = Image::make($image);
+            $image_resize->resize(250, 400)->save(public_path('images/' . $name));
 
             dd($image);
 
