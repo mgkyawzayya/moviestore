@@ -46,7 +46,7 @@ class AdminController extends Controller
 
             $image_resize = Image::make($image->getRealPath());
             $image_resize->resize(250, 400);
-            $image_resize->save(public_path('images/' . $name, 80));
+            $image_resize->save(public_path('images/' . $name));
 
             dd($image);
 
