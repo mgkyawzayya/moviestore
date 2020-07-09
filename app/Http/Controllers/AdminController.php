@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Movie;
 use Illuminate\Http\Request;
+use Intervention\Image\ImageManagerStatic as Image;
 
 
 class AdminController extends Controller
@@ -38,11 +39,14 @@ class AdminController extends Controller
             'photo' => 'required',
             'photo.*' => 'image|mimes:jpeg,png,jpg,gif,svg|max:10240'
         ]);
-        if ($request->hasFile('photo')) {
+        if ($request->hasfile('photo')) {
 
             $image       = $request->file('photo');
             $name = time() . '.' . $image->getClientOriginalExtension();
-            $image->move(public_path('images/'), $name);
+
+            $image_resize = Image::make($image->getRealPath());
+            $image_resize->resize(250, 400);
+            $image_resize->save(public_path('images/' . $name, 80));
 
             if ($request->size < 100) {
                 $size = $request->size . ' GB';
