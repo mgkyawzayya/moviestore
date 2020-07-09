@@ -32,7 +32,7 @@
                             </label>
                             <div class="mt-1 sm:mt-0 sm:col-span-4">
                                 <div class="max-w-xs rounded-md shadow-sm">
-                                    <input type="number" name="year" id="year" class="form-input block w-full transition duration-150 ease-in-out sm:text-sm sm:leading-5" value="{{ old('year') }}" max="4" />
+                                    <input type="number" name="year" id="year" class="form-input block w-full transition duration-150 ease-in-out sm:text-sm sm:leading-5" value="{{ old('year') }}" />
                                 </div>
                             </div>
                         </div>
