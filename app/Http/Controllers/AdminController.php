@@ -44,6 +44,7 @@ class AdminController extends Controller
             $name = time() . '.' . $image->getClientOriginalExtension();
             $image->move(public_path('images/'), $name);
 
+
             if ($request->size < 100) {
                 $size = $request->size . ' GB';
             } else {
