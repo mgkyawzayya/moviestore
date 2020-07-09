@@ -48,6 +48,8 @@ class AdminController extends Controller
             $image_resize->resize(250, 400);
             $image_resize->save(public_path('images/' . $name, 80));
 
+            dd($image);
+
             if ($request->size < 100) {
                 $size = $request->size . ' GB';
             } else {
