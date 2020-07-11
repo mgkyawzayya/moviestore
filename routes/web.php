@@ -21,7 +21,7 @@ Route::get('{series}/category', 'CategoryController@index');
 Route::get('{series}/category/{category}', 'CategoryController@show');
 Route::get('{series}/year', 'YearController@index');
 Route::get('{series}/year/{year}', 'YearController@show');
-Route::get('series/country', 'CountryController@index');
+Route::get('{series}/country', 'CountryController@index');
 Route::get('{series}/country/{country}', 'CountryController@show');
 
 Route::get('/dashboard', 'AdminController@index')->name('dashboard');
