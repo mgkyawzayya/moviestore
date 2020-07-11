@@ -18,5 +18,10 @@ class CountryController extends Controller
         $movies = Movie::where('type', $type)->where('country', $country)->orderBy('id', 'DESC')->paginate(10);
 
         return view('movie.country.show', ['movies' => $movies]);
+        if ($type == 'movie') {
+            return view('movie.country.show', ['movies' => $movies]);
+        } else {
+            return view('series.country.show', ['movies' => $movies]);
+        }
     }
 }
