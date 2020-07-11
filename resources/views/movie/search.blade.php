@@ -1,10 +1,10 @@
-@extends('layouts.dark')
+@extends('layouts.search')
 
 @section('content')
 <div class="relative bg-black pt-6 pb-5 px-4 sm:px-6 lg:pt-10 lg:pb-2 lg:px-8">
     <div class="relative max-w-7xl mx-auto">
         @if(isset($details))
-        <p class="leading-5 text-center text-2xl text-white p-6 lg:p-10">Search results for {{ $query }}</p>
+        <p class="leading-5 text-center text-2xl text-white p-6 lg:p-10">Search results for " {{ $query }} "</p>
         <div class="mt-0 grid gap-5 max-w-lg mx-auto grid-cols-2 lg:grid-cols-5 lg:max-w-none">
 
             @foreach( $details as $movie)

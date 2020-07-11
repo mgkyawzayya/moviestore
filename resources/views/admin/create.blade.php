@@ -1,9 +1,6 @@
-@extends('layouts.dashboard')
+@extends('layouts.search')
 @section('content')
 <div class="max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
-    <!-- Replace with your content -->
-
-
     <div class="flex flex-col">
         <form role="form" action="{{ url('movies/store') }}" method="POST" enctype="multipart/form-data">
             {{ csrf_field() }}

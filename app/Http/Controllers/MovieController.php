@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 
 use App\Movie;
 use Illuminate\Support\Facades\Input;
+use Illuminate\Support\Facades\Schema;
 
 class MovieController extends Controller
 {
@@ -39,8 +40,65 @@ class MovieController extends Controller
 
     public function detail($id)
     {
-        $movie = Movie::findOrFail($id);
-        return view('movie.detail', ['movie' => $movie]);
+        $generes = '';
+        $data = Movie::findOrFail($id);
+        $movie = Movie::find($id, ['action', 'adults', 'animation', 'adventure', 'biography', 'comedy', 'crime', 'drama', 'fantasy', 'historical', 'horror', 'roma', 'romance', 'scifi', 'sport', 'thriller', 'war']);
+
+        if ($movie->action == 1) {
+            $generes .= 'Action,';
+        }
+        if ($movie->adults == 1) {
+            $generes .= ' Adults,';
+        }
+        if ($movie->animation == 1) {
+            $generes .= ' Animation,';
+        }
+        if ($movie->adventure == 1) {
+            $generes .= ' Adventure,';
+        }
+        if ($movie->biography == 1) {
+            $generes .= ' Biography,';
+        }
+        if ($movie->comedy == 1) {
+            $generes .= ' Comedy,';
+        }
+        if ($movie->crime == 1) {
+            $generes .= ' Crime,';
+        }
+        if ($movie->drama == 1) {
+            $generes .= ' Drama,';
+        }
+        if ($movie->fantasy == 1) {
+            $generes .= ' Fantasy,';
+        }
+        if ($movie->historical == 1) {
+            $generes .= ' Historical,';
+        }
+        if ($movie->horror == 1) {
+            $generes .= ' Horror,';
+        }
+        if ($movie->roma == 1) {
+            $generes .= ' Roma,';
+        }
+        if ($movie->romance == 1) {
+            $generes .= ' Romance,';
+        }
+        if ($movie->scifi == 1) {
+            $generes .= ' Sci-Fi,';
+        }
+        if ($movie->sport == 1) {
+            $generes .= ' Sport,';
+        }
+        if ($movie->thriller == 1) {
+            $generes .= ' Thriller,';
+        }
+        if ($movie->war == 1) {
+            $generes .= ' War,';
+        } else {
+            $generes .= '';
+        }
+        $generes = rtrim($generes, ",");
+        return view('movie.detail', ['movie' => $data, 'generes' => $generes]);
     }
 
     public function search(Request $request)

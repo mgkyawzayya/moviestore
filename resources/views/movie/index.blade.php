@@ -7,9 +7,6 @@
             <a href="{{ url('movie/year') }}" class="flex flex-col rounded shadow overflow-hidden mr-3">
                 <div class="flex-1 bg-gray-800 p-4 flex flex-col justify-center">
                     <div class="flex-1 grid grid-cols-2">
-                        <!-- <svg class="mr-1 h-6 w-6 text-indigo-600 group-hover:text-gray-300 group-focus:text-gray-300 transition ease-in-out duration-150" stroke="currentColor" fill="none" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
-                        </svg> -->
                         <p class="text-sm leading-5 font-medium text-white">
                             Years
                         </p>
@@ -19,9 +16,6 @@
             <a href="{{ url('movie/category') }}" class="flex flex-col rounded shadow overflow-hidden mr-3">
                 <div class="flex-auto bg-gray-800 p-4 flex flex-col justify-center">
                     <div class="flex-1 grid grid-cols-2">
-                        <!-- <svg class="mr-1 h-6 w-6 text-indigo-600 group-hover:text-gray-300 group-focus:text-gray-300 transition ease-in-out duration-150" stroke="currentColor" fill="none" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
-                        </svg> -->
                         <p class="text-sm leading-5 font-medium text-white">
                             Category
                         </p>
@@ -31,9 +25,6 @@
             <a href="{{ url('movie/country') }}" class="flex flex-col rounded shadow overflow-hidden">
                 <div class="flex-auto bg-gray-800 p-4 flex flex-col justify-center">
                     <div class="flex-1 grid grid-cols-2">
-                        <!-- <svg class="mr-1 h-6 w-6 text-indigo-600 group-hover:text-gray-300 group-focus:text-gray-300 transition ease-in-out duration-150" stroke="currentColor" fill="none" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
-                        </svg> -->
                         <p class="text-sm leading-5 text-center font-medium text-white">
                             Country
                         </p>

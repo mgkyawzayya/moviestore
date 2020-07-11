@@ -34,5 +34,6 @@ Route::post('/movies/update', 'MovieController@update');
 Route::get('/movies/delete/{id}', 'MovieController@destroy');
 
 Route::any('/search', 'MovieController@search');
+Route::any('/admin/search', 'AdminController@search');
 
 Auth::routes(['register' => false]);

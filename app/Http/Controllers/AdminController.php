@@ -25,6 +25,16 @@ class AdminController extends Controller
         return view('admin.create');
     }
 
+    public function search(Request $request)
+    {
+        $title = $request->input('query');
+        $movies = Movie::where('title', 'LIKE', '%' . $title . '%')->orderBy('id', 'DESC')->take(20)->paginate(10);
+
+        if (count($movies) > 0)
+            return view('admin.search')->withDetails($movies)->withQuery($title);
+        else return view('admin.search')->withMessage('No Movies found. Try to search again !');
+    }
+
     public function store(Request $request)
     {
         $validatedData = $request->validate([

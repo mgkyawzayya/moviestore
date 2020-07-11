@@ -1,29 +1,11 @@
 @extends('layouts.search')
 @section('content')
-<div class="max-w-full m-0 mx-auto px-4 sm:px-6 md:px-3">
-    <div class=" px-4 py-5 border-b border-gray-200 sm:px-6 grid grid-cols-2 justify-start">
-        <div class="-ml-4 -mt-2 flex items-center justify-between flex-wrap sm:flex-no-wrap col-span-1">
-            <div class="ml-4 mt-2">
-                <h3 class="text-xl leading-6 font-medium text-gray-900">
-                    Movies List
-                </h3>
-            </div>
-        </div>
-        <a href="{{ url('dashboard/create') }}" class="col-span-1 text-right mr-4">
-            <div class="ml-4 mt-2 flex-shrink-0">
-                <span class="inline-flex rounded-md shadow-sm">
-                    <button type="button" class="relative inline-flex items-center px-4 py-2 border border-transparent text-sm leading-5 font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:shadow-outline-indigo focus:border-indigo-700 active:bg-indigo-700">
-                        New
-                    </button>
-                </span>
-            </div>
-        </a>
-    </div>
-</div>
 
 <div class="max-w-full mx-auto px-4 sm:px-6 md:px-8">
     <div class="py-4">
+        @if(isset($details))
         <div class=" border-gray-200 rounded-lg h-96">
+            <p class="leading-5 text-center text-2xl p-6 lg:p-5">Search results for " {{ $query }} "</p>
             <div class="flex flex-col">
                 <div class=" py-2 overflow-x-auto sm:-mx-6 sm:px-6 lg:-mx-8 lg:px-8">
                     <div class="align-middle inline-block min-w-full shadow overflow-hidden sm:rounded-lg border-b border-gray-200">
@@ -49,7 +31,7 @@
                                 </tr>
                             </thead>
                             <tbody class="bg-white">
-                                @foreach( $movies as $movie)
+                                @foreach( $details as $movie)
                                 <tr>
                                     <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-200 text-sm leading-5 font-medium text-gray-900">
                                         {{ $movie->title }}
@@ -88,33 +70,19 @@
                         </table>
                     </div>
                 </div>
-
                 <div class="mt-4">
-                    {{ $movies->links() }}
+                    {{ $details->links() }}
                 </div>
-
-                @if(session('success'))
-                <div class="fixed bottom-0 inset-x-0 pb-2 sm:pb-5">
-                    <div class="max-w-screen-xl mx-auto px-2 sm:px-6 lg:px-8">
-                        <div class="p-2 rounded-lg bg-indigo-600 shadow-lg sm:p-3">
-                            <div class="flex items-center justify-between flex-wrap">
-                                <div class="w-0 flex-1 flex items-center">
-                                    <p class="ml-3 font-medium text-white truncate">
-                                        <span class="">
-                                            {{ session('success') }}
-                                        </span>
-                                    </p>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                @endif
-
             </div>
         </div>
+        @endif
+
+
+        @if(isset($message))
+
+        <p class="leading-5 text-center text-2xl p-6 lg:p-10">{{ $message }}</p>
+
+        @endif
     </div>
-</div>
 </div>
 @endsection

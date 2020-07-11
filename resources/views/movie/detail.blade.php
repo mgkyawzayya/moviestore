@@ -25,6 +25,14 @@
                             {{ $movie->year }}
                         </dd>
                     </div>
+                    <div class="mt-3 sm:mt-0 grid grid-cols-3 lg:grid-cols-6 gap-2 sm:border-t sm:border-gray-200 sm:px-6 sm:py-5">
+                        <dt class="text-sm leading-5 font-medium text-gray-500 mb-3 col-span-1">
+                            Generes
+                        </dt>
+                        <dd class="mt-0 text-sm leading-5 text-gray-900 sm:mt-0 col-span-2 lg:col-span-5">
+                            {{ $generes }}
+                        </dd>
+                    </div>
                     <div class="mt-3 sm:mt-0 grid grid-cols-3 lg:grid-cols-6 gap-2 sm:border-t sm:border-gray-200 sm:px-6 sm:py-5 ">
                         <dt class="text-sm leading-5 font-medium text-gray-500 mb-3">
                             Code
