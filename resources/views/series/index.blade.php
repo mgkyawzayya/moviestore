@@ -41,7 +41,7 @@
                 </div>
             </a>
         </div>
-        <p class="text-2xl leading-5 text-center  text-white p-6">Series List</p>
+        <p class="text-2xl leading-5 text-center  text-white p-6">{{ $count }} series in Series List</p>
         <div class="mt-0 grid gap-5 max-w-lg mx-auto grid-cols-2 lg:grid-cols-6 lg:max-w-none">
 
             @foreach( $movies as $movie)

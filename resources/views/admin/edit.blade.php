@@ -59,7 +59,7 @@
                                         <option value="korea" {{ $movie->country == 'korea' ? "selected" : "" }}>Korea</option>
                                         <option value="thai" {{ $movie->country == 'thai' ? "selected" : "" }}>Thai</option>
                                         <option value="japan" {{ $movie->country == 'japan' ? "selected" : "" }}>Japan</option>
-                                        <option value="phillipine" {{ $movie->country == 'phillipine' ? "selected" : "" }}>Phillipine</option>
+                                        <option value="philippines" {{ $movie->country == 'philippines' ? "selected" : "" }}>Philippines</option>
                                         <option value="others" {{ $movie->country == 'others' ? "selected" : "" }}>Others</option>
                                     </select>
                                 </div>

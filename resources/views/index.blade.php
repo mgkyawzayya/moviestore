@@ -32,7 +32,7 @@
             </div>
         </div>
     </div>
-    <div class="mt-4">
+    <div class="mt-6">
         {{ $movies->links() }}
     </div>
 </div>

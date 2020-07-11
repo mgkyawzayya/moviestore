@@ -40,7 +40,7 @@ class AdminController extends Controller
         ]);
         if ($request->hasFile('photo')) {
 
-            $image       = $request->file('photo');
+            $image = $request->file('photo');
             $name = time() . '.' . $image->getClientOriginalExtension();
             $image->move(public_path('images/'), $name);
 

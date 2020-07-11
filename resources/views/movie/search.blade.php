@@ -31,6 +31,10 @@
             @endforeach
         </div>
 
+        <div class="mt-4">
+            {{ $details->links() }}
+        </div>
+
         @endif
 
         @if(isset($message))

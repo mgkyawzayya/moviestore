@@ -22,12 +22,14 @@ class MovieController extends Controller
     public function movies()
     {
         $movies = Movie::where('type', 'movie')->orderBy('id', 'DESC')->paginate(10);
-        return view('movie.index', ['movies' => $movies]);
+        $count = Movie::where('type', 'movie')->count();
+        return view('movie.index', ['movies' => $movies, 'count' => $count]);
     }
     public function series()
     {
         $movies = Movie::where('type', 'series')->orderBy('id', 'DESC')->paginate(10);
-        return view('series.index', ['movies' => $movies]);
+        $count = Movie::where('type', 'series')->count();
+        return view('series.index', ['movies' => $movies, 'count' => $count]);
     }
 
     public function detail($id)

@@ -57,7 +57,7 @@
                                         <option value="korea" {{ old('country') == 'korea' ? "selected" : "" }}>Korea</option>
                                         <option value="thai" {{ old('country') == 'thai' ? "selected" : "" }}>Thai</option>
                                         <option value="japan" {{ old('country') == 'japan' ? "selected" : "" }}>Japan</option>
-                                        <option value="phillipine" {{ old('country') == 'phillipine' ? "selected" : "" }}>Phillipine</option>
+                                        <option value="philippines" {{ old('country') == 'philippines' ? "selected" : "" }}>Philippines</option>
                                         <option value="others" {{ old('country') == 'others' ? "selected" : "" }}>Others</option>
                                     </select>
                                 </div>

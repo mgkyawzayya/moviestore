@@ -9,7 +9,7 @@ class CountryController extends Controller
 {
     public function index()
     {
-        $country = ['hollywood', 'bollywood', 'china', 'korea', 'thai', 'japan', 'phillipine', 'others'];
+        $country = ['hollywood', 'bollywood', 'china', 'korea', 'thai', 'japan', 'philippines', 'others'];
         return view('movie.country.index', ['countries' => $country]);
     }
 
