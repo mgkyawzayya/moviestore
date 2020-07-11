@@ -11,7 +11,7 @@ class MovieController extends Controller
 {
     public function __construct()
     {
-        $this->middleware('auth')->except(['index', 'movies', 'series', 'detail', 'search']);
+        $this->middleware('auth')->except(['index', 'movies', 'series', 'detail', 'search', 'about']);
     }
     public function index()
     {
@@ -30,6 +30,11 @@ class MovieController extends Controller
         $movies = Movie::where('type', 'series')->orderBy('id', 'DESC')->paginate(10);
         $count = Movie::where('type', 'series')->count();
         return view('series.index', ['movies' => $movies, 'count' => $count]);
+    }
+
+    public function about()
+    {
+        return view('about');
     }
 
     public function detail($id)

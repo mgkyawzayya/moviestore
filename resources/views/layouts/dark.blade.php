@@ -31,6 +31,7 @@
                             <a href="{{ url('/') }}" class="px-3 py-2 rounded-md text-sm font-medium leading-5 @if(Request::is('/')){{ 'text-white bg-indigo-900'}} @else {{ 'text-gray-300 hover:text-white hover:bg-gray-700' }}@endif  focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out">Home</a>
                             <a href="{{ url('movies') }}" class="px-3 py-2 rounded-md text-sm font-medium leading-5 @if(Request::is('movies')){{ 'text-white bg-indigo-900'}} @else {{ 'text-gray-300 hover:text-white hover:bg-gray-700' }}@endif  focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out">Movies</a>
                             <a href="{{ url('series') }}" class="px-3 py-2 rounded-md text-sm font-medium leading-5 @if(Request::is('series')){{ 'text-white bg-gray-900'}} @else {{ 'text-gray-300 hover:text-white hover:bg-gray-700' }}@endif  focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out">Series</a>
+                            <a href="{{ url('about') }}" class="px-3 py-2 rounded-md text-sm font-medium leading-5 @if(Request::is('about')){{ 'text-white bg-gray-900'}} @else {{ 'text-gray-300 hover:text-white hover:bg-gray-700' }}@endif  focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out">About</a>
                         </div>
                     </div>
                 </div>
@@ -66,6 +67,7 @@
                 <a href="{{ url('/') }}" class="block px-5 py-4 rounded-md text-base font-medium text-white @if(Request::is('/')){{ 'bg-gray-700'}} @else{{ '' }}@endif focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out">Home</a>
                 <a href="{{ url('movies') }}" class="block px-5 py-4 rounded-md text-base font-medium text-white @if(Request::is('movies')){{ 'bg-gray-700 '}} @else {{ '' }}@endif focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out">Movies</a>
                 <a href="{{ url('series') }}" class="block px-5 py-4 rounded-md text-base font-medium text-white  @if(Request::is('series')){{ 'bg-gray-700'}} @else{{ '' }}@endif focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out">Series</a>
+                <a href="{{ url('about') }}" class="block px-5 py-4 rounded-md text-base font-medium text-white  @if(Request::is('about')){{ 'bg-gray-700'}} @else{{ '' }}@endif focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out">About</a>
             </div>
         </div>
     </nav>
