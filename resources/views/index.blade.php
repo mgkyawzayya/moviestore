@@ -30,10 +30,10 @@
                 </a>
                 @endforeach
             </div>
+            <div class="mt-6">
+                {{ $movies->links() }}
+            </div>
         </div>
-    </div>
-    <div class="mt-6">
-        {{ $movies->links() }}
     </div>
 </div>
 @endsection
