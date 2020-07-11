@@ -22,9 +22,11 @@ class CategoryController extends Controller
         $movies = Movie::where('type', $type)->where($category, 1)->orderBy('id', 'DESC')->paginate(10);
 
         if ($type == 'movie') {
-            return view('movie.category.show', ['movies' => $movies]);
+            $count = Movie::where('type', $type)->where($category, 1)->count();
+            return view('movie.category.show', ['movies' => $movies, 'count' => $count, 'category' => $category]);
         } else {
-            return view('series.category.show', ['movies' => $movies]);
+            $count = Movie::where('type', $type)->where($category, 1)->count();
+            return view('series.category.show', ['movies' => $movies, 'count' => $count, 'category' => $category]);
         }
     }
 }
