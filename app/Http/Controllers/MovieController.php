@@ -65,11 +65,17 @@ class MovieController extends Controller
         if ($movie->crime == 1) {
             $generes .= ' Crime,';
         }
+        if ($movie->documentary == 1) {
+            $generes .= ' Documentary,';
+        }
         if ($movie->drama == 1) {
             $generes .= ' Drama,';
         }
         if ($movie->fantasy == 1) {
             $generes .= ' Fantasy,';
+        }
+        if ($movie->family == 1) {
+            $generes .= ' Family,';
         }
         if ($movie->historical == 1) {
             $generes .= ' Historical,';
@@ -146,8 +152,10 @@ class MovieController extends Controller
         $movie->biography = $request->has('biography');
         $movie->comedy = $request->has('comedy');
         $movie->crime = $request->has('crime');
+        $movie->documentary = $request->has('documentary');
         $movie->drama = $request->has('drama');
         $movie->fantasy = $request->has('fantasy');
+        $movie->family = $request->has('family');
         $movie->historical = $request->has('historical');
         $movie->horror = $request->has('horror');
         $movie->roma = $request->has('roma');

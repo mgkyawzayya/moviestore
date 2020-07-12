@@ -7,11 +7,11 @@
             <div>
                 <div class="mt-0 border-gray-200 ">
                     <div class="mt-0 sm:mt-0">
-                        <div class="sm:grid sm:grid-cols-5 sm:gap-4 sm:items-start sm:border-gray-200 sm:pt-5">
-                            <label for="title" class="block text-sm font-medium leading-5 text-gray-700 sm:mt-px sm:pt-2">
+                        <div class="sm:grid sm:grid-cols-10 sm:gap-4 sm:items-start sm:border-gray-200 sm:pt-5">
+                            <label for="title" class=" text-sm font-medium leading-5 text-gray-700 sm:mt-px sm:pt-2">
                                 Title
                             </label>
-                            <div class="mt-1 sm:mt-0 sm:col-span-4">
+                            <div class="mt-1 sm:mt-0 sm:col-span-8">
                                 <div class="max-w-lg rounded-md shadow-sm">
                                     <input id="title" name="title" type="text" class="form-input block w-full transition duration-150 ease-in-out sm:text-sm sm:leading-5" value="{{ old('title') }}" />
                                 </div>
@@ -23,11 +23,11 @@
                         </p>
                         @enderror
 
-                        <div class="mt-1 sm:mt-1 sm:grid sm:grid-cols-5 sm:gap-4 sm:items-start sm:border-gray-200 sm:pt-5">
+                        <div class="mt-1 sm:mt-1 sm:grid sm:grid-cols-10 sm:gap-4 sm:items-start sm:border-gray-200 sm:pt-5">
                             <label for="year" class="block text-sm font-medium leading-5 text-gray-700 sm:mt-px sm:pt-2">
                                 Year
                             </label>
-                            <div class="mt-1 sm:mt-0 sm:col-span-4">
+                            <div class="mt-1 sm:mt-0 sm:col-span-8">
                                 <div class="max-w-xs rounded-md shadow-sm">
                                     <input type="number" name="year" id="year" class="form-input block w-full transition duration-150 ease-in-out sm:text-sm sm:leading-5" value="{{ old('year') }}" />
                                 </div>
@@ -40,11 +40,11 @@
                         </p>
                         @enderror
 
-                        <div class="mt-1 sm:mt-1 sm:grid sm:grid-cols-5 sm:gap-4 sm:items-start sm:border-gray-200 sm:pt-5">
+                        <div class="mt-1 sm:mt-1 sm:grid sm:grid-cols-10 sm:gap-4 sm:items-start sm:border-gray-200 sm:pt-5">
                             <label for="country" class="block text-sm font-medium leading-5 text-gray-700 sm:mt-px sm:pt-2">
                                 Country
                             </label>
-                            <div class="mt-1 sm:mt-0 sm:col-span-4">
+                            <div class="mt-1 sm:mt-0 sm:col-span-8">
                                 <div class="max-w-xs rounded-md shadow-sm">
                                     <select id="country" name="country" class="block form-select w-full transition duration-150 ease-in-out sm:text-sm sm:leading-5">
                                         <option value="" {{ old('country') == '' ? "selected" : "" }}>Choose Nation</option>
@@ -65,11 +65,11 @@
                             {{ $message }}
                         </p>
                         @enderror
-                        <div class="mt-1 sm:mt-1 sm:grid sm:grid-cols-5 sm:gap-4 sm:items-start sm:border-gray-200 sm:pt-5">
+                        <div class="mt-1 sm:mt-1 sm:grid sm:grid-cols-10 sm:gap-4 sm:items-start sm:border-gray-200 sm:pt-5">
                             <label for="code" class="block text-sm font-medium leading-5 text-gray-700 sm:mt-px sm:pt-2">
                                 Code
                             </label>
-                            <div class="mt-1 sm:mt-0 sm:col-span-4">
+                            <div class="mt-1 sm:mt-0 sm:col-span-8">
                                 <div class="max-w-xs rounded-md shadow-sm">
                                     <input id="code" name="code" class="form-input block w-full transition duration-150 ease-in-out sm:text-sm sm:leading-5" value="{{ old('code') }}" />
                                 </div>
@@ -82,11 +82,11 @@
                         </p>
                         @enderror
 
-                        <div class="mt-1 sm:mt-1 sm:grid sm:grid-cols-5 sm:gap-4 sm:items-start sm:border-gray-200 sm:pt-5">
+                        <div class="mt-1 sm:mt-1 sm:grid sm:grid-cols-10 sm:gap-4 sm:items-start sm:border-gray-200 sm:pt-5">
                             <label for="type" class="block text-sm font-medium leading-5 text-gray-700 sm:mt-px sm:pt-2">
                                 Type
                             </label>
-                            <div class="mt-1 sm:mt-0 sm:col-span-4">
+                            <div class="mt-1 sm:mt-0 sm:col-span-8">
                                 <div class="max-w-xs rounded-md shadow-sm">
                                     <select id="type" name="type" class="block form-select w-full transition duration-150 ease-in-out sm:text-sm sm:leading-5">
                                         <option value="" {{ old('type')=='' ? "selected" : "" }}>Choose Type</option>
@@ -103,11 +103,11 @@
                         </p>
                         @enderror
 
-                        <div class="mt-1 sm:mt-1 sm:grid sm:grid-cols-5 sm:gap-4 sm:items-start sm:border-gray-200 sm:pt-5">
+                        <div class="mt-1 sm:mt-1 sm:grid sm:grid-cols-10 sm:gap-4 sm:items-start sm:border-gray-200 sm:pt-5">
                             <label for="size" class="block text-sm font-medium leading-5 text-gray-700 sm:mt-px sm:pt-2">
                                 Size
                             </label>
-                            <div class="mt-1 sm:mt-0 sm:col-span-4">
+                            <div class="mt-1 sm:mt-0 sm:col-span-8">
                                 <div class="max-w-xs rounded-md shadow-sm">
                                     <input id="size" name="size" class="form-input block w-full transition duration-150 ease-in-out sm:text-sm sm:leading-5" value="{{ old('size') }}" maxlength="4" />
                                 </div>
@@ -120,13 +120,13 @@
                         @enderror
                         <div class="mt-1 sm:mt-1 sm:border-gray-200 pt-3">
                             <fieldset>
-                                <div class="sm:grid sm:grid-cols-5 sm:gap-4 sm:items-baseline">
+                                <div class="sm:grid sm:grid-cols-10 sm:gap-4 sm:items-baseline">
                                     <div>
                                         <legend class="text-base leading-6 font-medium text-gray-900 sm:text-sm sm:leading-5 sm:text-gray-700">
                                             Generes
                                         </legend>
                                     </div>
-                                    <div class=" sm:col-span-4">
+                                    <div class=" sm:col-span-8">
                                         <div class="sm:grid sm:grid-cols-8">
                                             <div class="mt-4 sm:col-span-1 xs:col-span-1">
                                                 <div class="flex items-center">
@@ -177,26 +177,41 @@
                                                     </label>
                                                 </div>
                                                 <div class="mt-4 flex items-center">
+                                                    <input id="caegory" name="documentary" type="checkbox" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" value="documentary" />
+                                                    <label for="category" class="ml-3">
+                                                        <span class="block text-md leading-5 font-medium text-gray-700">Documentary</span>
+                                                    </label>
+                                                </div>
+                                                <div class="mt-4 flex items-center">
                                                     <input id="caegory" name="drama" type="checkbox" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" value="drama" />
                                                     <label for="category" class="ml-3">
                                                         <span class="block text-md leading-5 font-medium text-gray-700">Drama</span>
                                                     </label>
                                                 </div>
-                                                <div class="mt-4 flex items-center">
+                                            </div>
+                                            <div class="mt-4 sm:col-span-1 xs:col-span-1">
+                                                <div class=" flex items-center">
                                                     <input id="category" name="fantasy" type="checkbox" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" value="fantasy" />
                                                     <label for="category" class="ml-3">
                                                         <span class="block text-md leading-5 font-medium text-gray-700">Fantasy</span>
                                                     </label>
                                                 </div>
-                                            </div>
-                                            <div class="mt-4 sm:col-span-1 xs:col-span-1">
-                                                <div class="flex items-center">
+                                                <div class="mt-4 flex items-center">
+                                                    <input id="category" name="family" type="checkbox" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" value="family" />
+                                                    <label for="category" class="ml-3">
+                                                        <span class="block text-md leading-5 font-medium text-gray-700">Family</span>
+                                                    </label>
+                                                </div>
+                                                <div class="mt-4 flex items-center">
                                                     <input id="category" name="historical" type="checkbox" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" value="historical" />
                                                     <label for="category" class="ml-3">
                                                         <span class="block text-md leading-5 font-medium text-gray-700">Historical</span>
                                                     </label>
                                                 </div>
-                                                <div class="mt-4 flex items-center">
+
+                                            </div>
+                                            <div class="mt-4 sm:col-span-1 xs:col-span-1">
+                                                <div class=" flex items-center">
                                                     <input id="caegory" name="horror" type="checkbox" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" value="horror" />
                                                     <label for="category" class="ml-3">
                                                         <span class="block text-md leading-5 font-medium text-gray-700">Horror</span>
@@ -208,16 +223,15 @@
                                                         <span class="block text-md leading-5 font-medium text-gray-700">Roma</span>
                                                     </label>
                                                 </div>
-
-                                            </div>
-                                            <div class="mt-4 sm:col-span-1 xs:col-span-1">
-                                                <div class="flex items-center">
+                                                <div class="mt-4 flex items-center">
                                                     <input id="caegory" name="romance" type="checkbox" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" value="romance" />
                                                     <label for="category" class="ml-3">
                                                         <span class="block text-md leading-5 font-medium text-gray-700">Romance</span>
                                                     </label>
                                                 </div>
-                                                <div class="mt-4 flex items-center">
+                                            </div>
+                                            <div class="mt-4 sm:col-span-1 xs:col-span-1">
+                                                <div class=" flex items-center">
                                                     <input id="category" name="scifi" type="checkbox" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" value="sci-fi" />
                                                     <label for="category" class="ml-3">
                                                         <span class="block text-md leading-5 font-medium text-gray-700">Sci-fi</span>
@@ -229,17 +243,15 @@
                                                         <span class="block text-md leading-5 font-medium text-gray-700">Sport</span>
                                                     </label>
                                                 </div>
-
-                                            </div>
-                                            <div class="mt-4 sm:col-span-1 xs:col-span-1">
-
-                                                <div class="flex items-center">
+                                                <div class="mt-4 flex items-center">
                                                     <input id="category" name="thriller" type="checkbox" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" value="thriller" />
                                                     <label for="category" class="ml-3">
                                                         <span class="block text-md leading-5 font-medium text-gray-700">Thriller</span>
                                                     </label>
                                                 </div>
-                                                <div class="mt-4 flex items-center">
+                                            </div>
+                                            <div class="mt-4 sm:col-span-1 xs:col-span-1">
+                                                <div class="flex items-center">
                                                     <input id="category" name="war" type="checkbox" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" value="war" />
                                                     <label for="category" class="ml-3">
                                                         <span class="block text-md leading-5 font-medium text-gray-700">War</span>
@@ -252,11 +264,11 @@
                             </fieldset>
                         </div>
 
-                        <div class="mt-1 sm:mt-1 sm:grid sm:grid-cols-5 sm:gap-4 sm:items-start sm:border-gray-200 sm:pt-5">
+                        <div class="mt-1 sm:mt-1 sm:grid sm:grid-cols-10 sm:gap-4 sm:items-start sm:border-gray-200 sm:pt-5">
                             <label for="about" class="block text-sm font-medium leading-5 text-gray-700 sm:mt-px sm:pt-2">
                                 Description
                             </label>
-                            <div class="mt-1 sm:mt-0 sm:col-span-4">
+                            <div class="mt-1 sm:mt-0 sm:col-span-8">
                                 <div class="max-w-xl flex rounded-md shadow-sm">
                                     <textarea id="description" name="description" rows="6" class="form-textarea block w-full transition duration-150 ease-in-out sm:text-sm sm:leading-5">{{ old('description') }}</textarea>
                                 </div>
@@ -268,11 +280,11 @@
                         </p>
                         @enderror
 
-                        <div class="mt-1 sm:mt-1 sm:grid sm:grid-cols-5 sm:gap-4 sm:items-start sm:border-gray-200 sm:pt-5">
+                        <div class="mt-1 sm:mt-1 sm:grid sm:grid-cols-10 sm:gap-4 sm:items-start sm:border-gray-200 sm:pt-5">
                             <label for="size" class="block text-sm font-medium leading-5 text-gray-700 sm:mt-px sm:pt-2">
                                 Photo
                             </label>
-                            <div class="mt-1 sm:mt-0 sm:col-span-4">
+                            <div class="mt-1 sm:mt-0 sm:col-span-8">
                                 <div class="max-w-xs rounded-md shadow-sm">
                                     <input id="photo" name="photo" type="file" class="form-input block w-full transition duration-150 ease-in-out sm:text-sm sm:leading-5" accept="image/png, image/jpeg" />
                                 </div>

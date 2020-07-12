@@ -9,7 +9,7 @@ class CategoryController extends Controller
 {
     public function index($type)
     {
-        $categories = ['action', 'adults', 'animation', 'adventure', 'biography', 'comedy', 'crime', 'drama', 'fantasy', 'historical', 'horror', 'roma', 'romance', 'scifi', 'sport', 'thriller', 'war'];
+        $categories = ['action', 'adults', 'animation', 'adventure', 'biography', 'comedy', 'crime', 'documentary', 'drama', 'fantasy', 'family', 'historical', 'horror', 'roma', 'romance', 'scifi', 'sport', 'thriller', 'war'];
         if ($type == 'movie') {
             return view('movie.category.index', ['categories' => $categories]);
         } else {

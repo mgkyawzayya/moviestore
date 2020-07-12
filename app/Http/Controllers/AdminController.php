@@ -75,8 +75,10 @@ class AdminController extends Controller
             $movie->biography = $request->has('biography');
             $movie->comedy = $request->has('comedy');
             $movie->crime = $request->has('crime');
+            $movie->documentary = $request->has('documentary');
             $movie->drama = $request->has('drama');
             $movie->fantasy = $request->has('fantasy');
+            $movie->family = $request->has('family');
             $movie->historical = $request->has('historical');
             $movie->horror = $request->has('horror');
             $movie->roma = $request->has('roma');
