@@ -12,11 +12,11 @@
             <div>
                 <div class="mt-0 border-gray-200 ">
                     <div class="mt-0 sm:mt-0">
-                        <div class="sm:grid sm:grid-cols-8 sm:gap-1 sm:items-start sm:border-gray-200 sm:pt-5">
+                        <div class="sm:grid sm:grid-cols-5 sm:gap-4 sm:items-start sm:border-gray-200 sm:pt-5">
                             <label for="title" class="block text-sm font-medium leading-5 text-gray-700 sm:mt-px sm:pt-2">
                                 Title
                             </label>
-                            <div class="mt-1 sm:mt-0 sm:col-span-6">
+                            <div class="mt-1 sm:mt-0 sm:col-span-4">
                                 <div class="max-w-lg rounded-md shadow-sm">
                                     <input id="title" name="title" type="text" class="form-input block w-full transition duration-150 ease-in-out sm:text-sm sm:leading-5" value="{{ $movie->title }}" />
                                 </div>
@@ -28,11 +28,11 @@
                         </p>
                         @enderror
 
-                        <div class="mt-1 sm:mt-1 sm:grid sm:grid-cols-8 sm:gap-1 sm:items-start sm:border-gray-200 sm:pt-5">
+                        <div class="mt-1 sm:mt-1 sm:grid sm:grid-cols-5 sm:gap-4 sm:items-start sm:border-gray-200 sm:pt-5">
                             <label for="year" class="block text-sm font-medium leading-5 text-gray-700 sm:mt-px sm:pt-2">
                                 Year
                             </label>
-                            <div class="mt-1 sm:mt-0 sm:col-span-6">
+                            <div class="mt-1 sm:mt-0 sm:col-span-4">
                                 <div class="max-w-xs rounded-md shadow-sm">
                                     <input type="number" name="year" id="year" class="form-input block w-full transition duration-150 ease-in-out sm:text-sm sm:leading-5" value="{{ $movie->year }}" />
                                 </div>
@@ -45,11 +45,11 @@
                         </p>
                         @enderror
 
-                        <div class="mt-1 sm:mt-1 sm:grid sm:grid-cols-8 sm:gap-1 sm:items-start sm:border-gray-200 sm:pt-5">
+                        <div class="mt-1 sm:mt-1 sm:grid sm:grid-cols-5 sm:gap-4 sm:items-start sm:border-gray-200 sm:pt-5">
                             <label for="country" class="block text-sm font-medium leading-5 text-gray-700 sm:mt-px sm:pt-2">
                                 Country
                             </label>
-                            <div class="mt-1 sm:mt-0 sm:col-span-6">
+                            <div class="mt-1 sm:mt-0 sm:col-span-4">
                                 <div class="max-w-xs rounded-md shadow-sm">
                                     <select id="country" name="country" class="block form-select w-full transition duration-150 ease-in-out sm:text-sm sm:leading-5">
                                         <option value="" {{ $movie->country == '' ? "selected" : "" }}>Choose Nation</option>
@@ -70,11 +70,11 @@
                             {{ $message }}
                         </p>
                         @enderror
-                        <div class="mt-1 sm:mt-1 sm:grid sm:grid-cols-8 sm:gap-1 sm:items-start sm:border-gray-200 sm:pt-5">
+                        <div class="mt-1 sm:mt-1 sm:grid sm:grid-cols-5 sm:gap-4 sm:items-start sm:border-gray-200 sm:pt-5">
                             <label for="code" class="block text-sm font-medium leading-5 text-gray-700 sm:mt-px sm:pt-2">
                                 Code
                             </label>
-                            <div class="mt-1 sm:mt-0 sm:col-span-6">
+                            <div class="mt-1 sm:mt-0 sm:col-span-4">
                                 <div class="max-w-xs rounded-md shadow-sm">
                                     <input id="code" name="code" class="form-input block w-full transition duration-150 ease-in-out sm:text-sm sm:leading-5" value="{{ $movie->code }}" />
                                 </div>
@@ -87,11 +87,11 @@
                         </p>
                         @enderror
 
-                        <div class="mt-1 sm:mt-1 sm:grid sm:grid-cols-8 sm:gap-1 sm:items-start sm:border-gray-200 sm:pt-5">
+                        <div class="mt-1 sm:mt-1 sm:grid sm:grid-cols-5 sm:gap-4 sm:items-start sm:border-gray-200 sm:pt-5">
                             <label for="type" class="block text-sm font-medium leading-5 text-gray-700 sm:mt-px sm:pt-2">
                                 Type
                             </label>
-                            <div class="mt-1 sm:mt-0 sm:col-span-6">
+                            <div class="mt-1 sm:mt-0 sm:col-span-4">
                                 <div class="max-w-xs rounded-md shadow-sm">
                                     <select id="type" name="type" class="block form-select w-full transition duration-150 ease-in-out sm:text-sm sm:leading-5">
                                         <option value="" {{ $movie->type == '' ? "selected" : "" }}>Choose Type</option>
@@ -108,11 +108,11 @@
                         </p>
                         @enderror
 
-                        <div class="mt-1 sm:mt-1 sm:grid sm:grid-cols-8 sm:gap-1 sm:items-start sm:border-gray-200 sm:pt-5">
+                        <div class="mt-1 sm:mt-1 sm:grid sm:grid-cols-5 sm:gap-4 sm:items-start sm:border-gray-200 sm:pt-5">
                             <label for="size" class="block text-sm font-medium leading-5 text-gray-700 sm:mt-px sm:pt-2">
                                 Size
                             </label>
-                            <div class="mt-1 sm:mt-0 sm:col-span-6">
+                            <div class="mt-1 sm:mt-0 sm:col-span-4">
                                 <div class="max-w-xs rounded-md shadow-sm">
                                     <input id="size" name="size" class="form-input block w-full transition duration-150 ease-in-out sm:text-sm sm:leading-5" value="{{ $movie->size }}" maxlength="4" />
                                 </div>
@@ -122,17 +122,16 @@
                         <p class="text-red-500 text-xs italic mt-4">
                             {{ $message }}
                         </p>
-                        @enderror
                         <div class="mt-1 sm:mt-1 sm:border-gray-200 pt-3">
                             <fieldset>
-                                <div class="sm:grid sm:grid-cols-8 sm:gap-1 sm:items-baseline">
+                                <div class="sm:grid sm:grid-cols-5 sm:gap-4 sm:items-baseline">
                                     <div>
                                         <legend class="text-base leading-6 font-medium text-gray-900 sm:text-sm sm:leading-5 sm:text-gray-700">
                                             Generes
                                         </legend>
                                     </div>
-                                    <div class=" sm:col-span-6">
-                                        <div class="sm:grid sm:grid-cols-7">
+                                    <div class=" sm:col-span-4">
+                                        <div class="sm:grid sm:grid-cols-5">
                                             <div class="mt-4 sm:col-span-1 xs:col-span-1">
                                                 <div class="flex items-center">
                                                     <input id="category" name="action" type="checkbox" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" value="action" {{ $movie->action == 1 ? "checked" : "" }} />
@@ -152,15 +151,15 @@
                                                         <span class="block text-md leading-5 font-medium text-gray-700">Animation</span>
                                                     </label>
                                                 </div>
-                                            </div>
-                                            <div class="mt-4 sm:col-span-1 xs:col-span-1">
-                                                <div class="flex items-center">
+                                                <div class="mt-4 flex items-center">
                                                     <input id="caegory" name="adventure" type="checkbox" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" value="adventure" {{ $movie->adventure == 1 ? "checked" : "" }} />
                                                     <label for="category" class="ml-3">
                                                         <span class="block text-md leading-5 font-medium text-gray-700">Adventure</span>
                                                     </label>
                                                 </div>
-                                                <div class="mt-4 flex items-center">
+                                            </div>
+                                            <div class="mt-4 sm:col-span-1 xs:col-span-1">
+                                                <div class="flex items-center">
                                                     <input id="caegory" name="biography" type="checkbox" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" value="biography" {{ $movie->biography == 1 ? "checked" : "" }} />
                                                     <label for="category" class="ml-3">
                                                         <span class="block text-md leading-5 font-medium text-gray-700">Biography</span>
@@ -172,10 +171,7 @@
                                                         <span class="block text-md leading-5 font-medium text-gray-700">Comedy</span>
                                                     </label>
                                                 </div>
-                                            </div>
-                                            <div class="mt-4 sm:col-span-1 xs:col-span-1">
-
-                                                <div class="flex items-center">
+                                                <div class="mt-4 flex items-center">
                                                     <input id="category" name="crime" type="checkbox" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" value="crime" {{ $movie->crime == 1 ? "checked" : "" }} />
                                                     <label for="category" class="ml-3">
                                                         <span class="block text-md leading-5 font-medium text-gray-700">Crime</span>
@@ -187,15 +183,15 @@
                                                         <span class="block text-md leading-5 font-medium text-gray-700">Documentary</span>
                                                     </label>
                                                 </div>
-                                                <div class="mt-4 flex items-center">
+                                            </div>
+                                            <div class="mt-4 sm:col-span-1 xs:col-span-1">
+                                                <div class="flex items-center">
                                                     <input id="caegory" name="drama" type="checkbox" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" value="drama" {{ $movie->drama == 1 ? "checked" : "" }} />
                                                     <label for="category" class="ml-3">
                                                         <span class="block text-md leading-5 font-medium text-gray-700">Drama</span>
                                                     </label>
                                                 </div>
-                                            </div>
-                                            <div class="mt-4 sm:col-span-1 xs:col-span-1">
-                                                <div class=" flex items-center">
+                                                <div class="mt-4 flex items-center">
                                                     <input id="category" name="fantasy" type="checkbox" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" value="fantasy" {{ $movie->fantasy == 1 ? "checked" : "" }} />
                                                     <label for="category" class="ml-3">
                                                         <span class="block text-md leading-5 font-medium text-gray-700">Fantasy</span>
@@ -213,10 +209,9 @@
                                                         <span class="block text-md leading-5 font-medium text-gray-700">Historical</span>
                                                     </label>
                                                 </div>
-
                                             </div>
                                             <div class="mt-4 sm:col-span-1 xs:col-span-1">
-                                                <div class=" flex items-center">
+                                                <div class="flex items-center">
                                                     <input id="caegory" name="horror" type="checkbox" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" value="horror" {{ $movie->horror == 1 ? "checked" : "" }} />
                                                     <label for="category" class="ml-3">
                                                         <span class="block text-md leading-5 font-medium text-gray-700">Horror</span>
@@ -234,17 +229,15 @@
                                                         <span class="block text-md leading-5 font-medium text-gray-700">Romance</span>
                                                     </label>
                                                 </div>
-
-                                            </div>
-                                            <div class="mt-4 sm:col-span-1 xs:col-span-1">
-
-                                                <div class=" flex items-center">
+                                                <div class="mt-4 flex items-center">
                                                     <input id="category" name="scifi" {{ $movie->scifi == 1 ? "checked" : "" }} type="checkbox" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" value="sci-fi" />
                                                     <label for="category" class="ml-3">
                                                         <span class="block text-md leading-5 font-medium text-gray-700">Sci-fi</span>
                                                     </label>
                                                 </div>
-                                                <div class="mt-4 flex items-center">
+                                            </div>
+                                            <div class="mt-4 sm:col-span-1 xs:col-span-1">
+                                                <div class="flex items-center">
                                                     <input id="category" name="sport" type="checkbox" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" value="sport" {{ $movie->sport == 1 ? "checked" : "" }} />
                                                     <label for="category" class="ml-3">
                                                         <span class="block text-md leading-5 font-medium text-gray-700">Sport</span>
@@ -256,9 +249,7 @@
                                                         <span class="block text-md leading-5 font-medium text-gray-700">Thriller</span>
                                                     </label>
                                                 </div>
-                                            </div>
-                                            <div class="mt-4 sm:col-span-1 xs:col-span-1">
-                                                <div class="flex items-center">
+                                                <div class="mt-4 flex items-center">
                                                     <input id="category" name="war" type="checkbox" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" value="war" {{ $movie->war == 1 ? "checked" : "" }} />
                                                     <label for="category" class="ml-3">
                                                         <span class="block text-md leading-5 font-medium text-gray-700">War</span>
@@ -271,11 +262,11 @@
                             </fieldset>
                         </div>
 
-                        <div class="mt-1 sm:mt-1 sm:grid sm:grid-cols-8 sm:gap-1 sm:items-start sm:border-gray-200 sm:pt-5">
+                        <div class="mt-1 sm:mt-1 sm:grid sm:grid-cols-5 sm:gap-4 sm:items-start sm:border-gray-200 sm:pt-5">
                             <label for="about" class="block text-sm font-medium leading-5 text-gray-700 sm:mt-px sm:pt-2">
                                 Description
                             </label>
-                            <div class="mt-1 sm:mt-0 sm:col-span-6">
+                            <div class="mt-1 sm:mt-0 sm:col-span-4">
                                 <div class="max-w-xl flex rounded-md shadow-sm">
                                     <textarea id="description" name="description" rows="6" class="form-textarea block w-full transition duration-150 ease-in-out sm:text-sm sm:leading-5">{{ $movie->description }}</textarea>
                                 </div>
