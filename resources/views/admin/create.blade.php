@@ -8,7 +8,7 @@
                 <div class="mt-0 border-gray-200 ">
                     <div class="mt-0 sm:mt-0">
                         <div class="grid grid-cols-5 gap-2 items-start border-gray-200 pt-5">
-                            <label for="title" class=" text-sm font-medium leading-5 text-gray-700 sm:mt-px sm:pt-2">
+                            <label for="title" class=" text-sm font-medium col-span-1 leading-5 text-gray-700 sm:mt-px sm:pt-2">
                                 Title
                             </label>
                             <div class="mt-1 col-span-4">
@@ -24,7 +24,7 @@
                         @enderror
 
                         <div class="mt-1 grid grid-cols-5 gap-2 sm:items-start sm:border-gray-200 sm:pt-5">
-                            <label for="year" class="block text-sm font-medium leading-5 text-gray-700 sm:mt-px sm:pt-2">
+                            <label for="year" class="block text-sm col-span-1 font-medium leading-5 text-gray-700 sm:mt-px sm:pt-2">
                                 Year
                             </label>
                             <div class="mt-1 col-span-4">
@@ -41,7 +41,7 @@
                         @enderror
 
                         <div class="mt-1 grid grid-cols-5 gap-2 items-start border-gray-200 pt-5">
-                            <label for="country" class="block text-sm font-medium leading-5 text-gray-700 sm:mt-px sm:pt-2">
+                            <label for="country" class="block text-sm col-span-1 font-medium leading-5 text-gray-700 sm:mt-px sm:pt-2">
                                 Country
                             </label>
                             <div class="mt-1  col-span-4">
@@ -66,7 +66,7 @@
                         </p>
                         @enderror
                         <div class="mt-1 sm:mt-1 grid grid-cols-5 gap-2 sm:items-start border-gray-200 pt-5">
-                            <label for="code" class="block text-sm font-medium leading-5 text-gray-700 sm:mt-px sm:pt-2">
+                            <label for="code" class="block text-sm col-span-1 font-medium leading-5 text-gray-700 sm:mt-px sm:pt-2">
                                 Code
                             </label>
                             <div class="mt-1 sm:mt-0 col-span-4">
@@ -83,7 +83,7 @@
                         @enderror
 
                         <div class="mt-1 sm:mt-1 grid grid-cols-5 gap-2 items-start border-gray-200 pt-5">
-                            <label for="type" class="block text-sm font-medium leading-5 text-gray-700 sm:mt-px sm:pt-2">
+                            <label for="type" class="block text-sm col-span-1 font-medium leading-5 text-gray-700 sm:mt-px sm:pt-2">
                                 Type
                             </label>
                             <div class="mt-1 sm:mt-0 col-span-4">
@@ -104,7 +104,7 @@
                         @enderror
 
                         <div class="mt-1 sm:mt-1 grid grid-cols-5 gap-2 items-start border-gray-200 pt-5">
-                            <label for="size" class="block text-sm font-medium leading-5 text-gray-700 sm:mt-px sm:pt-2">
+                            <label for="size" class="block text-sm col-span-1 font-medium leading-5 text-gray-700 sm:mt-px sm:pt-2">
                                 Size
                             </label>
                             <div class="mt-1 sm:mt-0 col-span-4">
@@ -122,7 +122,7 @@
                             <fieldset>
                                 <div class="grid grid-cols-5 gap-2 items-baseline">
                                     <div>
-                                        <legend class="text-base leading-6 font-medium text-gray-900 sm:text-sm sm:leading-5 sm:text-gray-700">
+                                        <legend class="text-base col-span-1 leading-5 font-medium text-gray-900 sm:text-sm sm:leading-5 sm:text-gray-700">
                                             Generes
                                         </legend>
                                     </div>
@@ -265,7 +265,7 @@
                         </div>
 
                         <div class="mt-1 sm:mt-1 grid grid-cols-5 gap-2 tems-start border-gray-200 pt-5">
-                            <label for="about" class="block text-sm font-medium leading-5 text-gray-700 sm:mt-px sm:pt-2">
+                            <label for="about" class="block text-sm col-span-1 font-medium leading-5 text-gray-700 sm:mt-px sm:pt-2">
                                 Description
                             </label>
                             <div class="mt-1 sm:mt-0 col-span-4">
@@ -281,7 +281,7 @@
                         @enderror
 
                         <div class="mt-1 sm:mt-1 grid grid-cols-5 gap-2 items-start border-gray-200 pt-5">
-                            <label for="size" class="block text-sm font-medium leading-5 text-gray-700 sm:mt-px sm:pt-2">
+                            <label for="size" class="block text-sm col-span-1 font-medium leading-5 text-gray-700 sm:mt-px sm:pt-2">
                                 Photo
                             </label>
                             <div class="mt-1 sm:mt-0 col-span-4">
