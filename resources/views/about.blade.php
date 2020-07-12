@@ -7,12 +7,12 @@
             <li class="col-span-1 flex flex-col text-center  rounded-lg shadow">
                 <div class="flex-1 flex flex-col p-8">
                     <img class="w-60 h-60 flex-shrink-0 mx-auto bg-black rounded-lg " src="{{ url('img/logo/drfone.svg') }}" alt="">
-                    <h3 class="mt-8 mb-1 text-gray-100 leading-10 font-medium">Phone Services </h3>
-                    <h3 class="mt-2 mb-1 text-gray-100 leading-10 font-medium">& </h3>
-                    <h3 class="mt-2 mb-1 text-gray-100 leading-10 font-medium">Accessories </h3>
-                    <h2 class="mt-6 mb-10 text-gray-100 leading-10 font-medium">အမှတ်(၆) ၊ ၅ လမ်း နှင့် ၆ လမ်းကြား ၊ မြိုင်လမ်းဘေး ၊ ပခုက္ကူမြို့။ </h2>
+                    <h3 class="mt-8 mb-1 text-5xl text-gray-100 leading-10 font-medium">Phone Services </h3>
+                    <h3 class="mt-2 mb-1 text-5xl text-gray-100 leading-10 font-medium">& </h3>
+                    <h3 class="mt-2 mb-1 text-5xl text-gray-100 leading-10 font-medium">Accessories </h3>
+                    <h2 class="mt-6 mb-10 text-5xl text-gray-100 leading-10 font-medium">အမှတ်(၆) ၊ ၅ လမ်း နှင့် ၆ လမ်းကြား ၊ မြိုင်လမ်းဘေး ၊ ပခုက္ကူမြို့။ </h2>
                 </div>
-                <div class="mt-3 border-t border-gray-800 mb-32">
+                <div class="mt-8 border-t border-gray-800 mb-32">
                     <div class="-mt-px flex">
                         <div class="w-0 flex-1 flex border-r border-gray-800">
                             <a href="tel:09970185220" class="relative -mr-px w-0 flex-1 inline-flex items-center justify-center py-4 text-sm leading-5 text-gray-100 font-medium border border-transparent rounded-bl-lg hover:text-gray-500 focus:outline-none focus:shadow-outline-blue focus:border-blue-300 focus:z-10 transition ease-in-out duration-150">
