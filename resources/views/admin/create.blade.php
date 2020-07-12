@@ -127,7 +127,7 @@
                                         </legend>
                                     </div>
                                     <div class=" sm:col-span-4">
-                                        <div class="grid grid-cols-7">
+                                        <div class="sm:grid sm:grid-cols-7">
                                             <div class="mt-4 col-span-1 xs:col-span-1">
                                                 <div class="flex items-center">
                                                     <input id="category" name="action" type="checkbox" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" value="action" />
