@@ -1,4 +1,4 @@
-@extends('layouts.search')
+@extends('layouts.dark')
 
 @section('content')
 <div class="relative bg-black pt-6 pb-5 px-4 sm:px-6 lg:pt-10 lg:pb-2 lg:px-8">
