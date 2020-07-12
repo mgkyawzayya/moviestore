@@ -5,7 +5,7 @@
     <div class="relative max-w-7xl mx-auto">
         <ul class="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
             <li class="col-span-1 flex flex-col text-center  rounded-lg shadow">
-                <div class="flex-1 flex flex-col p-14">
+                <div class="flex-1 flex flex-col p-14 text-custom">
                     <img class="w-48 h-48 flex-shrink-0 mx-auto bg-black rounded-full " src="{{ url('img/logo/drfone.svg') }}" alt="">
                     <h3 class="mt-8 mb-1 text-5xl text-gray-100 leading-10 font-medium">Phone Services </h3>
                     <h3 class="mt-2 mb-1 text-5xl text-gray-100 leading-10 font-medium">& </h3>
