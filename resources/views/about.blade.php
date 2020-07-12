@@ -5,14 +5,14 @@
     <div class="relative max-w-7xl mx-auto">
         <ul class="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
             <li class="col-span-1 flex flex-col text-center  rounded-lg shadow">
-                <div class="flex-1 flex flex-col p-14">
-                    <img class="w-48 h-48 flex-shrink-0 mx-auto bg-black rounded-full " src="{{ url('img/logo/drfone.svg') }}" alt="">
-                    <h3 class="mt-8 mb-1 text-5xl text-gray-100 leading-10 font-medium">Phone Services </h3>
-                    <h3 class="mt-2 mb-1 text-5xl text-gray-100 leading-10 font-medium">& </h3>
-                    <h3 class="mt-2 mb-1 text-5xl text-gray-100 leading-10 font-medium">Accessories </h3>
-                    <h2 class="mt-6 mb-10 text-5xl text-gray-100 leading-10 font-medium">အမှတ်(၆) ၊ ၅ လမ်း နှင့် ၆ လမ်းကြား ၊ မြိုင်လမ်းဘေး ၊ ပခုက္ကူမြို့။ </h2>
+                <div class="flex-1 flex flex-col p-8">
+                    <img class="w-60 h-60 flex-shrink-0 mx-auto bg-black rounded-lg " src="{{ url('img/logo/drfone.svg') }}" alt="">
+                    <h3 class="mt-8 mb-1 text-gray-100 text-4xl leading-10 font-sans">Phone Services </h3>
+                    <h3 class="mt-2 mb-1 text-gray-100 text-4xl leading-10 font-sans">& </h3>
+                    <h3 class="mt-2 mb-1 text-gray-100 text-4xl leading-10 font-sans">Accessories </h3>
+                    <h2 class="mt-6 mb-5 text-gray-100 text-2xl leading-10 font-sans">အမှတ်(၆) ၊ ၅ လမ်း နှင့် ၆ လမ်းကြား ၊ မြိုင်လမ်းဘေး ၊ ပခုက္ကူမြို့။ </h2>
                 </div>
-                <div class="mt-8 border-t border-gray-800 mb-32">
+                <div class="mt-10 border-t border-gray-800 mb-32">
                     <div class="-mt-px flex">
                         <div class="w-0 flex-1 flex border-r border-gray-800">
                             <a href="tel:09970185220" class="relative -mr-px w-0 flex-1 inline-flex items-center justify-center py-4 text-sm leading-5 text-gray-100 font-medium border border-transparent rounded-bl-lg hover:text-gray-500 focus:outline-none focus:shadow-outline-blue focus:border-blue-300 focus:z-10 transition ease-in-out duration-150">
