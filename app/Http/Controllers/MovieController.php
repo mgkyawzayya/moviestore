@@ -42,7 +42,7 @@ class MovieController extends Controller
     {
         $generes = '';
         $data = Movie::findOrFail($id);
-        $movie = Movie::find($id, ['action', 'adults', 'animation', 'adventure', 'biography', 'comedy', 'crime', 'drama', 'fantasy', 'historical', 'horror', 'roma', 'romance', 'scifi', 'sport', 'thriller', 'war']);
+        $movie = Movie::find($id, ['action', 'adults', 'animation', 'adventure', 'biography', 'comedy', 'crime', 'documentary', 'drama', 'fantasy', 'family', 'historical', 'horror', 'roma', 'romance', 'scifi', 'sport', 'thriller', 'war']);
 
         if ($movie->action == 1) {
             $generes .= 'Action,';
@@ -110,7 +110,7 @@ class MovieController extends Controller
     public function search(Request $request)
     {
         $title = $request->input('query');
-        $movies = Movie::where('title', 'LIKE', '%' . $title . '%')->orderBy('id', 'DESC')->take(20)->paginate(10);
+        $movies = Movie::where('title', 'LIKE', '%' . $title . '%')->orderBy('id', 'DESC')->take(40)->paginate(10);
 
         if (count($movies) > 0)
             return view('movie.search')->withDetails($movies)->withQuery($title);

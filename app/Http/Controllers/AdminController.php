@@ -28,7 +28,7 @@ class AdminController extends Controller
     public function search(Request $request)
     {
         $title = $request->input('query');
-        $movies = Movie::where('title', 'LIKE', '%' . $title . '%')->orderBy('id', 'DESC')->take(20)->paginate(10);
+        $movies = Movie::where('title', 'LIKE', '%' . $title . '%')->orderBy('id', 'DESC')->take(40)->paginate(10);
 
         if (count($movies) > 0)
             return view('admin.search')->withDetails($movies)->withQuery($title);
