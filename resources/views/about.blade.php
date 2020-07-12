@@ -10,7 +10,7 @@
                     <h3 class="mt-8 mb-1 text-gray-100 text-4xl leading-10 font-sans">Phone Services </h3>
                     <h3 class="mt-2 mb-1 text-gray-100 text-4xl leading-10 font-sans">& </h3>
                     <h3 class="mt-2 mb-1 text-gray-100 text-4xl leading-10 font-sans">Accessories </h3>
-                    <h2 class="mt-6 mb-5 text-gray-100 text-2xl leading-10 font-sans">အမှတ်(၆) ၊ ၅ လမ်း နှင့် ၆ လမ်းကြား ၊ မြိုင်လမ်းဘေး ၊ ပခုက္ကူမြို့။ </h2>
+                    <h2 class="mt-6 mb-5 text-gray-100 text-2xl leading-10 font-sans">အမှတ်(၆) ၊ ၅ လမ်း နှင့် ၆ လမ်းကြား ၊ မြိုင်လမ်းဘေး ၊ <br> ပခုက္ကူမြို့။ </h2>
                 </div>
                 <div class="mt-10 border-t border-gray-800 mb-32">
                     <div class="-mt-px flex">
