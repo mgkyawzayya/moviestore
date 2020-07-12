@@ -1,8 +1,6 @@
 @extends('layouts.search')
 @section('content')
 <div class="max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
-    <!-- Replace with your content -->
-
 
     <div class="flex flex-col">
         <form role="form" action="{{ url('movies/update') }}" method="POST" enctype="multipart/form-data">
@@ -122,6 +120,7 @@
                         <p class="text-red-500 text-xs italic mt-4">
                             {{ $message }}
                         </p>
+                        @enderror
                         <div class="mt-1 sm:mt-1 sm:border-gray-200 pt-3">
                             <fieldset>
                                 <div class="sm:grid sm:grid-cols-5 sm:gap-4 sm:items-baseline">
@@ -297,7 +296,6 @@
                     </span>
                 </div>
             </div>
-
         </form>
     </div>
 
@@ -306,6 +304,5 @@
         {{ session('success') }}
     </div>
     @endif
-    <!-- /End replace -->
 </div>
 @endsection
