@@ -126,8 +126,8 @@
                                             Generes
                                         </legend>
                                     </div>
-                                    <div class=" sm:col-span-4">
-                                        <div class="sm:grid sm:grid-cols-6">
+                                    <div class="sm:col-span-4">
+                                        <div class="sm:grid sm:grid-cols-5">
                                             <div class="mt-4 sm:col-span-1 xs:col-span-1">
                                                 <div class="flex items-center">
                                                     <input id="category" name="action" type="checkbox" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" value="action" />
@@ -154,7 +154,7 @@
                                                     </label>
                                                 </div>
                                             </div>
-                                            <div class="mt-4 col-span-1">
+                                            <div class="mt-4 sm:col-span-1 xs:col-span-1">
                                                 <div class="flex items-center">
                                                     <input id="caegory" name="biography" type="checkbox" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" value="biography" />
                                                     <label for="category" class="ml-3">
@@ -180,7 +180,7 @@
                                                     </label>
                                                 </div>
                                             </div>
-                                            <div class="mt-4 col-span-1">
+                                            <div class="mt-4 sm:col-span-1 xs:col-span-1">
                                                 <div class="flex items-center">
                                                     <input id="caegory" name="drama" type="checkbox" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" value="drama" />
                                                     <label for="category" class="ml-3">
@@ -206,7 +206,7 @@
                                                     </label>
                                                 </div>
                                             </div>
-                                            <div class="mt-4 col-span-1">
+                                            <div class="mt-4 sm:col-span-1 xs:col-span-1">
                                                 <div class=" flex items-center">
                                                     <input id="caegory" name="horror" type="checkbox" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" value="horror" />
                                                     <label for="category" class="ml-3">
@@ -232,7 +232,7 @@
                                                     </label>
                                                 </div>
                                             </div>
-                                            <div class="mt-4 col-span-1">
+                                            <div class="mt-4 sm:col-span-1 xs:col-span-1">
                                                 <div class=" flex items-center">
                                                     <input id="category" name="sport" type="checkbox" class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" value="sport" />
                                                     <label for="category" class="ml-3">
