@@ -12,7 +12,7 @@
         @endif
 
         <a href="" class="relative inline-flex items-center px-4 py-2 text-sm font-medium text-white bg-gray-800 border border-gray-800 leading-5 rounded-md hover:text-gray-400 focus:outline-none focus:shadow-outline-blue focus:border-blue-300 active:bg-gray-100 active:text-gray-700 transition ease-in-out duration-150">
-            Page {{ $paginator->currentPage() }} in {{ $paginator->lastPage() }}
+            Page {{ $paginator->currentPage() }} of {{ $paginator->lastPage() }}
         </a>
 
         @if ($paginator->hasMorePages())
